@@ -1,6 +1,6 @@
 # 3rd-Capstone
 # Objective
-The goal of this project is to create a classification system for movies. There are many movies with a myriad of genres. However, a movie does not have one genre since it can be an action and sci-fi or just be an action movie. Thus, classifying movies to fit them neatly into one category isn't easy. Because of the variety of genres and sometimes new genres being created, categorizing movies can be an arduous task. Thus this project was done to facilitate the work and make it easier.
+The goal of this project is to create a classification system for movies. There are many movies with a myriad of genres. However, a movie does not have one genre since it can be an action and sci-fi or just be an action movie. Thus, classifying movies to fit them neatly into one category isn't easy. Because of the variety of genres and sometimes new genres being created, categorizing movies can be an arduous task. This is project was done to facilitate the work and make it easier.
 
 # Target Audience and Why
 The target audiences could be an archivist or new streaming companies that want to categorize their movie correction way. Streaming services are expanding and sorting through different genres for audiences or searching for one is an important task.
@@ -20,6 +20,11 @@ The third issue was certain overviews containing too many unnecessary words, mos
 
 For EDA I went through many different factors that could lead to predicting movie genres, such as the length of the movie summary for each genre or the connection between each genre. However, these connections were loose and didn’t amount to anything.
 ![image](https://user-images.githubusercontent.com/43226667/208692194-0a2dda8c-ce46-4119-96b8-092318c3bba5.png)
+
+Another thing to keep in mind was that there were too many common words or compound words that meant the same thing. To reduce redundancy, certain words were eliminated. 
+
+![image](https://user-images.githubusercontent.com/43226667/208701136-1c5be63d-d8fc-4ea3-a3ae-448cf9b0cba0.png)
+
 ![image](https://user-images.githubusercontent.com/43226667/208692314-3fae070e-7a5d-4d07-81fa-59c9c8545e50.png)
 
 
@@ -33,6 +38,8 @@ Finally, I went through each movie genre to see which words would be numerous an
 # Modeling
 For modeling, I used MultiLabelBinarizera the output wouldn’t just be one. Since there was more than one label, LabelGinarizer couldn’t be used.
 In addition, I had to cut down the genre to three most numerous ones, drama, action, and comedy. The reason being, the data wasn’t enough as each summary was too short and there weren’t enough movies.
+![image](https://user-images.githubusercontent.com/43226667/208699608-6539e81f-5916-4b12-8341-68bbb26e48a7.png)
+![image](https://user-images.githubusercontent.com/43226667/208699615-1f3f4438-e325-41fd-8471-6050c3e8125c.png)
 
 
 # Counter vs TF ID
